@@ -6,34 +6,44 @@ import { useStateContext } from "../context/StateContext";
 
 import { AiOutlineShopping } from "react-icons/ai";
 
-const Navbar = () => {
+import { Container, Button } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+const NavbarComp = () => {
 	const { showCart, setShowCart, totalQuantities } = useStateContext();
 	return (
-		<div className="navbar-container">
-			<p className="logo">
-				<Link href="/">Home</Link>
-			</p>
-			<p className="logo">
-				<Link href="/about">About</Link>
-			</p>
-			<p className="logo">
-				<Link href="/work">Work</Link>
-			</p>
-			<p className="logo">
-				<Link href="/contact">Contact</Link>
-			</p>
-			<button
-				type="button"
-				className="cart-icon"
-				onClick={() => setShowCart(true)}
-			>
-				<AiOutlineShopping />
-				<span className="cart-item-qty">{totalQuantities}</span>
-			</button>
+		<Navbar
+			bg="dark"
+			variant="dark"
+			expand="lg"
+			fixed="top"
+			style={{
+				height: "70px",
+			}}
+			className=" rounded  my-3 mx-5"
+		>
+			<Container>
+				<Navbar.Brand href="/">Square Style</Navbar.Brand>
+				<Nav className="justify-content-center">
+					<Nav.Link href="/">Home</Nav.Link>
+					<Nav.Link href="/work">Work</Nav.Link>
+					<Nav.Link href="/contact">Contact</Nav.Link>
+				</Nav>
 
-			{showCart && <Cart />}
-		</div>
+				<Button
+					type="button"
+					className="cart-icon mb-5 "
+					onClick={() => setShowCart(true)}
+					style={{ width: "60px" }}
+				>
+					<AiOutlineShopping />
+					<span className="cart-item-qty">{totalQuantities}</span>
+				</Button>
+				{showCart && <Cart />}
+			</Container>
+		</Navbar>
 	);
 };
 
-export default Navbar;
+export default NavbarComp;

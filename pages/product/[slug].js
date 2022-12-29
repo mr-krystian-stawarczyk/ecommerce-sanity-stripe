@@ -23,7 +23,7 @@ const ProductDetails = ({ product, products }) => {
 		setShowCart(true);
 	};
 	return (
-		<div>
+		<div style={{ marginTop: "6rem" }}>
 			<div className="product-detail-container">
 				<div>
 					<div className="image-container">
@@ -108,8 +108,7 @@ export const getStaticPaths = async () => {
       slug {
         current
       }
-    }
-    `;
+    }`;
 
 	const products = await client.fetch(query);
 
@@ -127,9 +126,10 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
 	const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-	const productsQuery = '*[_type == "product"]';
 
 	const product = await client.fetch(query);
+	const productsQuery = `*[_type == "product"]`;
+
 	const products = await client.fetch(productsQuery);
 
 	console.log(product);

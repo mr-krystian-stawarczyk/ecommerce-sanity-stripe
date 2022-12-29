@@ -1,16 +1,16 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "./Navbar";
+import NavbarComp from "./Navbar";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
 	return (
 		<div className="layout">
 			<Head>
-				<title> Ecommerce Test Store</title>
+				<title> Square Style</title>
 			</Head>
 			<header>
-				<Navbar />
+				<NavbarComp />
 			</header>
 			<main className="main-container">{children}</main>
 			<footer>

@@ -16,11 +16,14 @@ export default {
       title: 'ButtonText',
       type: 'string',
     },
+
     {
       name: 'product',
       title: 'Product',
       type: 'string',
     },
+    {name: 'slug', title: 'Slug', type: 'slug', options: {source: 'name', maxLength: 90}},
+
     {
       name: 'desc',
       title: 'Desc',

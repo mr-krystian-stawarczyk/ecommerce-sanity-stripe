@@ -35,7 +35,7 @@ const FooterBanner = ({
 					</Link>
 				</div>
 
-				<img src={urlFor(image)} className="footer-banner-image" heigt={250} />
+				<img src={urlFor(image)} className="footer-banner-image" />
 			</div>
 		</div>
 	);
