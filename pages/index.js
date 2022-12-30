@@ -1,6 +1,7 @@
 import React from "react";
 import { client } from "../lib/client";
 import { Product, FooterBanner, HeroBanner, AboutMe } from "../components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = ({ products, bannerData }) => {
 	return (
