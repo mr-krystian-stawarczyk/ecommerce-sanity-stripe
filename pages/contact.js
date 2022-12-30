@@ -26,6 +26,12 @@ const Contact = () => {
 			>
 				<Col md={4}>You Can Reach Us</Col>
 			</Row>
+			<Row
+				className="justify-content-md-center text-light bg-dark rounded"
+				style={{ fontSize: "2rem" }}
+			>
+				<Col md={4}>Everywhere - Everytime</Col>
+			</Row>
 			<Row className="justify-content-center my-3 mt-5">
 				<Col md={3}>
 					<Card

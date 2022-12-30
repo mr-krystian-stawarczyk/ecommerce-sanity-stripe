@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Card, InputGroup, Form } from "react-bootstrap";
+import {
+	Container,
+	Row,
+	Col,
+	Card,
+	InputGroup,
+	Form,
+	Button,
+} from "react-bootstrap";
 
 import Image from "next/image";
 
@@ -50,11 +58,7 @@ function Work() {
 										className="mb-3 "
 										style={{ width: "160px", height: "50px" }}
 									>
-										<Form.Control
-											placeholder="linktr.ee/yourname"
-											aria-label="Username"
-											aria-describedby="basic-addon1"
-										/>
+										<Button href="/about"> About Me</Button>
 									</InputGroup>
 								</Col>
 							</Card.Body>
@@ -95,11 +99,7 @@ function Work() {
 										className="mb-3 "
 										style={{ width: "160px", height: "50px" }}
 									>
-										<Form.Control
-											placeholder="linktr.ee/yourname"
-											aria-label="Username"
-											aria-describedby="basic-addon1"
-										/>
+										<Button href="/"> Shop</Button>
 									</InputGroup>
 								</Col>
 							</Card.Body>
@@ -115,55 +115,83 @@ function Work() {
 						/>
 					</Col>
 				</Row>
-				<Row className="my-5 rounded">
-					<Col md={5} sm className="mx-auto my-auto ">
-						<Image
-							src="/assets/pexels-jeshootscom-834892.jpg"
-							alt="me"
-							width="350"
-							height="350"
-							className="rounded"
-						/>
-					</Col>
-					<Col md={7} sm className="mx-auto my-auto ">
-						<Card
-							style={{
-								alignItems: "center",
-								justifyContent: "center",
-								border: "none",
-							}}
-							className="bg-transparent text-white pt-5"
-						>
+
+				<Row>
+					<Row
+						className="justify-content-md-center text-light  rounded mb-5 mt-5"
+						style={{ fontSize: "3rem" }}
+					>
+						<Col md={4} className="mt-5">
+							Our Latest Work
+						</Col>
+					</Row>
+				</Row>
+				<Row>
+					<Col md={3}>
+						{" "}
+						<Card style={{ width: "18rem" }}>
+							<Card.Img
+								variant="top"
+								src="/assets/pexels-jeshootscom-834892.jpg"
+							/>
 							<Card.Body>
-								<Card.Title
-									style={{
-										fontSize: "5vw",
-										lineHeight: "98%",
-
-										fontWeight: "bold",
-									}}
-								>
-									We offer a wide range of materials and finishes
-								</Card.Title>
-
-								<Card.Text style={{}}>
-									Our team of skilled craftsmen will work with you to bring your
-									vision to life. Whether you have a specific design in mind or
-									just a general idea of what you're looking for, we can help
-									you create the perfect piece.
+								<Card.Title>Card Title</Card.Title>
+								<Card.Text>
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
 								</Card.Text>
-								<Col className="btn-group ">
-									<InputGroup
-										className="mb-3 "
-										style={{ width: "160px", height: "50px" }}
-									>
-										<Form.Control
-											placeholder="linktr.ee/yourname"
-											aria-label="Username"
-											aria-describedby="basic-addon1"
-										/>
-									</InputGroup>
-								</Col>
+								<Button variant="primary">Go somewhere</Button>
+							</Card.Body>
+						</Card>
+					</Col>
+					<Col md={3}>
+						{" "}
+						<Card style={{ width: "18rem" }}>
+							<Card.Img
+								variant="top"
+								src="/assets/pexels-jeshootscom-834892.jpg"
+							/>
+							<Card.Body>
+								<Card.Title>Card Title</Card.Title>
+								<Card.Text>
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</Card.Text>
+								<Button variant="primary">Go somewhere</Button>
+							</Card.Body>
+						</Card>
+					</Col>
+					<Col md={3}>
+						{" "}
+						<Card style={{ width: "18rem" }}>
+							<Card.Img
+								variant="top"
+								src="/assets/pexels-jeshootscom-834892.jpg"
+							/>
+							<Card.Body>
+								<Card.Title>Card Title</Card.Title>
+								<Card.Text>
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</Card.Text>
+								<Button variant="primary">Go somewhere</Button>
+							</Card.Body>
+						</Card>
+					</Col>
+					<Col md={3}>
+						{" "}
+						<Card style={{ width: "18rem" }}>
+							<Card.Img
+								variant="top"
+								src="/assets/pexels-jeshootscom-834892.jpg"
+							/>
+							<Card.Body>
+								<Card.Title>Card Title</Card.Title>
+								<Card.Text>
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</Card.Text>
+								<Button variant="primary">Go somewhere</Button>
 							</Card.Body>
 						</Card>
 					</Col>

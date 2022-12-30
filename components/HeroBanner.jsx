@@ -65,8 +65,13 @@ const HeroBanner = ({ heroBanner }) => {
 						</Card>
 					</Col>
 					<Col md={1}></Col>
-					<Col md={5} sm className=" rounded ">
-						<img src={urlFor(heroBanner.image)} alt="hero-img" />
+					<Col md={5} sm>
+						<Image
+							className="rounded mt-5 ml-0"
+							src={urlFor(heroBanner.image)}
+							alt="hero-img"
+							style={{ maxHeight: "500px", maxWidth: "500px" }}
+						/>
 					</Col>
 				</Row>
 			</Container>
