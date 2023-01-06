@@ -11,7 +11,7 @@ import {
 
 import Image from "next/image";
 
-function Work() {
+const Work = () => {
 	return (
 		<>
 			<Container fluid className=" text-dark pt-5 mt-5 rounded">
@@ -199,6 +199,6 @@ function Work() {
 			</Container>
 		</>
 	);
-}
+};
 
 export default Work;

@@ -14,37 +14,55 @@ const NavbarComp = () => {
 	const { showCart, setShowCart, totalQuantities } = useStateContext();
 	return (
 		<Navbar
-			bg="dark"
-			variant="dark"
 			expand="lg"
 			fixed="top"
 			style={{
 				height: "70px",
 			}}
-			className=" rounded  my-3 mx-5"
+			className="  bg-white"
 		>
 			<Container>
 				<Navbar.Brand href="/">
-					<BsTools className="m-2 text-danger" />
-					<span>Square Style</span>
+					<span>Square Style®</span>
 				</Navbar.Brand>
-				<Nav className="justify-content-center">
-					<Nav.Link href="/">Home</Nav.Link>
-					<Nav.Link href="/about">About</Nav.Link>
-					<Nav.Link href="/work">Work</Nav.Link>
-					<Nav.Link href="/contact">Contact</Nav.Link>
-				</Nav>
 
-				<Button
-					type="button"
-					className="cart-icon mb-5 "
-					onClick={() => setShowCart(true)}
-					style={{ width: "60px" }}
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse
+					id="basic-navbar-nav"
+					className="bg-white rounded justify-content-center"
+					style={{
+						height: "70px",
+					}}
 				>
-					<AiOutlineShopping />
-					<span className="cart-item-qty">{totalQuantities}</span>
-				</Button>
-				{showCart && <Cart />}
+					<Nav>
+						<Nav.Link href="/" className="mx-2">
+							Home
+						</Nav.Link>
+						<Nav.Link href="/about" className="mx-2">
+							About
+						</Nav.Link>
+						<Nav.Link href="/shop" className="mx-2">
+							Shop
+						</Nav.Link>
+						<Nav.Link href="/contact" className="mx-2">
+							Contact
+						</Nav.Link>
+						<Nav.Link href="/faq" className="mx-2">
+							Faq
+						</Nav.Link>
+					</Nav>
+
+					<Button
+						type="button"
+						className="cart-icon mb-5 bg-dark  "
+						onClick={() => setShowCart(true)}
+						style={{ width: "50px" }}
+					>
+						<AiOutlineShopping />
+						<span className="cart-item-qty">{totalQuantities}</span>
+					</Button>
+					{showCart && <Cart />}
+				</Navbar.Collapse>
 			</Container>
 		</Navbar>
 	);

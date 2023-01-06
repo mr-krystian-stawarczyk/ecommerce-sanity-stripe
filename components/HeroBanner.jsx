@@ -17,7 +17,7 @@ import {
 const HeroBanner = ({ heroBanner }) => {
 	return (
 		<>
-			<Container fluid className=" text-dark  rounded  mt-5">
+			<Container fluid className="  rounded  mt-5">
 				<Row className="pt-5 ">
 					<Col md={6} sm className="  rounded ">
 						<Card
@@ -26,7 +26,7 @@ const HeroBanner = ({ heroBanner }) => {
 								justifyContent: "center",
 								border: "none",
 							}}
-							className=" pt-5 bg-transparent text-light"
+							className=" pt-5 bg-transparent "
 						>
 							<Card.Body>
 								<Card.Title
@@ -66,12 +66,13 @@ const HeroBanner = ({ heroBanner }) => {
 					</Col>
 					<Col md={1}></Col>
 					<Col md={5} sm>
-						<Image
-							className="rounded mt-5 ml-0"
-							src={urlFor(heroBanner.image)}
-							alt="hero-img"
-							style={{ maxHeight: "500px", maxWidth: "500px" }}
-						/>
+						<Card className="border-0">
+							<Card.Img
+								className="rounded mt-5 ml-0"
+								src={urlFor(heroBanner.image)}
+								alt="hero-img"
+							/>
+						</Card>
 					</Col>
 				</Row>
 			</Container>

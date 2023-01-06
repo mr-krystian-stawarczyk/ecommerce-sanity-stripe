@@ -14,20 +14,12 @@ import Image from "next/image";
 function AboutMe() {
 	return (
 		<>
-			<Container
-				fluid
-				className=" text-dark  mt-5 mb-5 pb-5 pt-5 rounded"
-				id="section3"
-			>
+			<Container fluid className="  mt-5 mb-5 pb-5 pt-5 rounded">
 				<Row style={{ alignItems: "center", justifyContent: "center" }}>
-					<Col md={4} sm className="mx-auto my-auto ">
-						<Image
-							src="/assets/pexels-craig-adderley-1670045.jpg"
-							alt="me"
-							width="450"
-							height="350"
-							className="rounded ml-"
-						/>
+					<Col md={5} sm className="mx-auto my-auto ">
+						<Card>
+							<Card.Img variant="top" src="/assets/hd1.jpg" />
+						</Card>
 					</Col>
 					<Col md={6} sm className="mx-auto my-auto ">
 						<Card
@@ -36,7 +28,7 @@ function AboutMe() {
 								justifyContent: "center",
 								border: "none",
 							}}
-							className="bg-transparent text-white pt-5"
+							className="bg-transparent pt-5"
 						>
 							<Card.Body>
 								<Card.Title
@@ -60,7 +52,7 @@ function AboutMe() {
 									looking for, we can help you create the perfect piece.
 								</Card.Text>
 
-								<Button href="/about" vartiant="secondary">
+								<Button href="/about" className="bg-dark">
 									About Me
 								</Button>
 							</Card.Body>

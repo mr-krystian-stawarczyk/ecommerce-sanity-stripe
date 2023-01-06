@@ -1,25 +1,20 @@
 import React from "react";
 import { client } from "../lib/client";
-import { Product, FooterBanner, HeroBanner, AboutMe } from "../components";
+import {
+	Product,
+	FooterBanner,
+	HeroBanner,
+	AboutMe,
+	Gallery,
+} from "../components";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Container, Row, Col } from "react-bootstrap";
 const Home = ({ products, bannerData }) => {
 	return (
-		<div>
-			<HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+		<>
 			<AboutMe />
-			<div className="products-heading">
-				<h2>Best Selling Products</h2>
-				<p>Furnitures of many variations</p>
-			</div>
-
-			<div className="products-container">
-				{products?.map((product) => (
-					<Product key={product._id} product={product} />
-				))}
-			</div>
-			<FooterBanner footerBanner={bannerData && bannerData[0]} />
-		</div>
+			<Gallery />
+		</>
 	);
 };
 

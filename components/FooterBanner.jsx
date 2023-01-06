@@ -29,20 +29,26 @@ const FooterBanner = ({
 }) => {
 	return (
 		<Container>
-			<Row className="bg-dark text-light align-items-md-center justify-content-md-center rounded py-3 my-5">
-				<Col md={3}>
+			<Row className=" align-items-md-center justify-content-md-center rounded py-3 my-5 ">
+				<Col md={3} className="">
+					<h1>SALE SALE SALE!</h1>
 					<p>{discount}</p>
 					<h3>{largeText1}</h3>
 					<h3>{largeText2}</h3>
 					<p>{saleTime}</p>
 				</Col>
-				<Col md={4}>
-					<img
-						className="bg-primary rounded-circle"
-						src={urlFor(image)}
-						alt="Footer"
-						style={{ maxWidth: "300px", maxHeight: "300px" }}
-					/>
+				<Col
+					md={3}
+					className=" align-items-md-center justify-content-md-center rounded py-3 my-5 "
+				>
+					<div className="rounded ">
+						<img
+							className="bg-primary rounded-circle"
+							src={urlFor(image)}
+							alt="Footer"
+							style={{ maxWidth: "300px", maxHeight: "300px" }}
+						/>
+					</div>
 				</Col>
 				<Col md={3}>
 					<p>{smallText}</p>
