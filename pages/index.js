@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { client } from "../lib/client";
 import {
 	Product,
@@ -7,9 +8,8 @@ import {
 	AboutMe,
 	Gallery,
 } from "../components";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
-const Home = ({ products, bannerData }) => {
+
+const Home = () => {
 	return (
 		<>
 			<AboutMe />
