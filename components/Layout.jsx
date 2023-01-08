@@ -3,14 +3,14 @@ import Head from "next/head";
 import NavbarComp from "./Navbar";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageProps }) => {
 	return (
 		<div className="layout">
 			<Head>
 				<title> Square Style</title>
 			</Head>
 			<header>
-				<NavbarComp />
+				<NavbarComp {...pageProps} />
 			</header>
 			<main className="main-container">{children}</main>
 			<footer>

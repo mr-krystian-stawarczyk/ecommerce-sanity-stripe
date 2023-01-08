@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	Container,
 	Row,
@@ -10,18 +10,29 @@ import {
 } from "react-bootstrap";
 
 import Image from "next/image";
+import Typewriter from "../lib/typewriter";
 
 function AboutMe() {
 	return (
 		<>
-			<Container fluid className="  mt-5 mb-5 pb-5 pt-5 rounded">
-				<Row style={{ alignItems: "center", justifyContent: "center" }}>
-					<Col md={5} sm className="mx-auto my-auto ">
+			<Container
+				fluid
+				className="  mt-5 pt-1 rounded "
+				style={{ height: "100vh" }}
+			>
+				<Row
+					style={{
+						alignItems: "center",
+						justifyContent: "center",
+					}}
+					className="mt-5 "
+				>
+					<Col md={6} sm className="mx-auto my-auto mt-5">
 						<Card>
-							<Card.Img variant="top" src="/assets/hd1.jpg" />
+							<Card.Img src="/assets/hd1.jpg" />
 						</Card>
 					</Col>
-					<Col md={6} sm className="mx-auto my-auto ">
+					<Col md={6} sm className="mx-auto my-auto mt-5">
 						<Card
 							style={{
 								alignItems: "center",
@@ -43,14 +54,7 @@ function AboutMe() {
 									U
 								</Card.Title>
 
-								<Card.Text>
-									Welcome to our furniture creator shop! Here, you can design
-									and customize your own unique pieces of furniture to fit your
-									personal style and space. Our team of skilled craftsmen will
-									work with you to bring your vision to life. Whether you have a
-									specific design in mind or just a general idea of what you're
-									looking for, we can help you create the perfect piece.
-								</Card.Text>
+								<Typewriter />
 
 								<Button href="/about" className="bg-dark">
 									About Me

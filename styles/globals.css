@@ -9,7 +9,26 @@ body,
 }
 
 ::-webkit-scrollbar {
-	width: 0px;
+	width: 10px;
+}
+
+.bg {
+	background-image: url("/assets/header-bg.jpg");
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(0, 0, 0);
+}
+
+.hover:hover {
+	transform: scale(1.2);
+	transition: 0.3s ease-in-out;
+	z-index: 1;
 }
 
 a {

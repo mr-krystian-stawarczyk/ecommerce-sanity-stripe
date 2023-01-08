@@ -56,21 +56,24 @@ const Cart = () => {
 					<span className="cart-num-items"> ({totalQuantities} items)</span>
 				</button>
 
-				{cartItems.length < 1 && (
-					<div className="empty-cart">
-						<AiOutlineShopping size={150} />
-						<h3>Your shopping bag is empty</h3>
-						<Link href="/">
-							<button
-								type="button"
-								onClick={() => setShowCart(false)}
-								className="btn"
-							>
-								Continue Shopping
-							</button>
-						</Link>
-					</div>
-				)}
+				<div>
+					{" "}
+					{cartItems.length < 1 && (
+						<div className="empty-cart">
+							<AiOutlineShopping size={150} />
+							<h3>Your shopping bag is empty</h3>
+							<Link href="/shop">
+								<button
+									type="button"
+									onClick={() => setShowCart(false)}
+									className="btn"
+								>
+									Continue Shopping
+								</button>
+							</Link>
+						</div>
+					)}
+				</div>
 
 				<div className="product-container">
 					{cartItems.length >= 1 &&

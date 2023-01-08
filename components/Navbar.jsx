@@ -5,8 +5,8 @@ import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
 
 import { AiOutlineShopping } from "react-icons/ai";
-import { BsTools } from "react-icons/bs";
-import { Container, Button } from "react-bootstrap";
+
+import { Container, Button, Form } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -26,41 +26,42 @@ const NavbarComp = () => {
 					<span>Square Style®</span>
 				</Navbar.Brand>
 
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse
 					id="basic-navbar-nav"
-					className="bg-white rounded justify-content-center"
+					className="bg-white rounded justify-content-end"
 					style={{
 						height: "70px",
 					}}
 				>
 					<Nav>
-						<Nav.Link href="/" className="mx-2">
+						<Nav.Link as={Link} href="/" className="mx-2">
 							Home
 						</Nav.Link>
-						<Nav.Link href="/about" className="mx-2">
+						<Nav.Link as={Link} href="/about" className="mx-2">
 							About
 						</Nav.Link>
-						<Nav.Link href="/shop" className="mx-2">
+						<Nav.Link as={Link} href="/shop" className="mx-2">
 							Shop
 						</Nav.Link>
-						<Nav.Link href="/contact" className="mx-2">
+						<Nav.Link as={Link} href="/contact" className="mx-2">
 							Contact
 						</Nav.Link>
-						<Nav.Link href="/faq" className="mx-2">
+						<Nav.Link as={Link} href="/faq" className="mx-2">
 							Faq
-						</Nav.Link>
+						</Nav.Link>{" "}
 					</Nav>
 
 					<Button
 						type="button"
-						className="cart-icon mb-5 bg-dark  "
+						className="cart-icon mb-5 bg-dark "
 						onClick={() => setShowCart(true)}
 						style={{ width: "50px" }}
 					>
 						<AiOutlineShopping />
 						<span className="cart-item-qty">{totalQuantities}</span>
 					</Button>
+
 					{showCart && <Cart />}
 				</Navbar.Collapse>
 			</Container>
