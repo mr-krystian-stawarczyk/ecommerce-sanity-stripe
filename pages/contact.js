@@ -21,11 +21,10 @@ const Contact = () => {
 		<Container
 			className=" rounded"
 			style={{
-				marginTop: "12rem",
 				paddingBottom: "3rem",
 			}}
 		>
-			<Row className=" rounded my-5 py-5">
+			<Row className=" rounded my-5 py-5" style={{ height: "100vh" }}>
 				{" "}
 				<Col md={6} sm className="mx-auto my-auto ">
 					<Card

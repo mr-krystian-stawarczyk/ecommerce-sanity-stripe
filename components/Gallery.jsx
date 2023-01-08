@@ -11,7 +11,7 @@ const Gallery = () => {
 				</Col>
 			</Row>
 			<Row className="justify-content-md-center">
-				<Col md={8} className="mx-2 my-2 ">
+				<Col md={7} className="mx-2 my-2 ">
 					<Card className="hover rounded">
 						<Card.Img variant="top" src="/assets/gl2.jpg" />
 						<Card.Body>
@@ -24,7 +24,7 @@ const Gallery = () => {
 				</Col>
 
 				<Row className="justify-content-md-center">
-					<Col md={6} className="mx-2 my-2">
+					<Col md={5} className="mx-2 my-2">
 						<Card className="hover rounded">
 							<Card.Img variant="top" src="/assets/gl1.jpg" />
 							<Card.Body>
@@ -71,7 +71,7 @@ const Gallery = () => {
 						</Col>
 					</Row>
 					<Row className="justify-content-md-center">
-						<Col className="mx-2 my-2">
+						<Col md={10} className="mx-2 my-2">
 							<Card className="hover rounded">
 								<Card.Img variant="top" src="/assets/gl1.jpg" />
 								<Card.Body>
