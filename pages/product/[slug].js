@@ -26,26 +26,25 @@ const ProductDetails = ({ product, products }) => {
 	return (
 		<Container className="mt-5">
 			<Row>
-				<Col className="product-detail-container">
+				<Col md={6}>
 					<Row>
-						{" "}
-						<Col className="image-container">
-							<img
-								src={urlFor(image && image[index])}
-								className="product-detail-image "
-							/>{" "}
-							<Row>
-								{image?.map((item, i) => (
-									<img
-										onMouseEnter={() => setIndex(i)}
-										key={i}
-										src={urlFor(item)}
-										className={
-											i === index ? "small-image selected-image" : "small-image"
-										}
-									/>
-								))}
-							</Row>
+						<img
+							src={urlFor(image && image[index])}
+							className="product-detail-image "
+						/>
+					</Row>
+					<Row>
+						<Col className="m-2">
+							{image?.map((item, i) => (
+								<img
+									onMouseEnter={() => setIndex(i)}
+									key={i}
+									src={urlFor(item)}
+									className={
+										i === index ? "small-image selected-image" : "small-image"
+									}
+								/>
+							))}
 						</Col>
 					</Row>
 				</Col>
@@ -88,12 +87,13 @@ const ProductDetails = ({ product, products }) => {
 						</Row>
 					</Col>
 				</Col>
-				<Row>
-					<h2 className="text-dark text-center mb-5"> You may also like</h2>
-					{products.map((item) => (
-						<Product key={item._id} product={item} />
-					))}
-				</Row>
+			</Row>
+
+			<Row className="mt-3">
+				<h2 className="text-dark text-center mb-5 "> You may also like</h2>
+				{products.map((item) => (
+					<Product key={item._id} product={item} />
+				))}
 			</Row>
 		</Container>
 	);

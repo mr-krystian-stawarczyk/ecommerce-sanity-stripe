@@ -4,10 +4,10 @@ import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
 import Image from "next/image";
 const Gallery = () => {
 	return (
-		<Container fluid className="justify-content-md-center bg-dark rounded ">
+		<Container fluid className="justify-content-md-center  rounded ">
 			<Row className="text-center">
 				<Col>
-					<h1 className="text-light">Gallery</h1>
+					<h1 className="">Gallery</h1>
 				</Col>
 			</Row>
 			<Row className="justify-content-md-center">
@@ -87,7 +87,7 @@ const Gallery = () => {
 			</Row>
 			<Row className="justify-content-md-center mt-5 pt-5">
 				<Col md={3}>
-					<h1 className="text-light"> Slides Gallery</h1>{" "}
+					<h1 className=""> Slides Gallery</h1>{" "}
 				</Col>
 			</Row>
 			<Row className="justify-content-md-center">

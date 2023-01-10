@@ -25,7 +25,6 @@ const Contact = () => {
 			}}
 		>
 			<Row className=" rounded my-5 py-5" style={{ height: "100vh" }}>
-				{" "}
 				<Col md={6} sm className="mx-auto my-auto ">
 					<Card
 						style={{
@@ -81,13 +80,19 @@ const Contact = () => {
 				<Col
 					md={6}
 					sm
-					className="mx-auto my-auto  "
-					style={{ fontSize: "7rem" }}
+					className="mx-auto my-auto d-block justify-content-md-center"
+					style={{
+						fontSize: "3rem",
+					}}
 				>
-					<BsFacebook className="mx-3 rounded p-2" />
-					<BsInstagram className="mx-3  rounded p-2" />
-					<BsSnapchat className="mx-3  rounded p-2" />
-					<BsTwitter className="mx-3  rounded p-2" />
+					<Row style={{ alignContent: "center" }}>
+						<Col md={{ span: 4, offset: 5 }}>
+							<BsFacebook className="mx-3 rounded p-2 d-block hover" />
+							<BsInstagram className="mx-3  rounded p-2 d-block hover" />
+							<BsSnapchat className="mx-3  rounded p-2 d-block hover" />
+							<BsTwitter className="mx-3  rounded p-2 d-block hover" />
+						</Col>
+					</Row>
 				</Col>
 				<Col md={6} sm className="mx-auto my-auto ">
 					<Card
@@ -117,7 +122,6 @@ const Contact = () => {
 									style={{ width: "160px", height: "50px" }}
 								>
 									<Button href="/" className="bg-dark">
-										{" "}
 										Home
 									</Button>
 								</InputGroup>

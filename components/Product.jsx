@@ -5,9 +5,9 @@ import { urlFor } from "../lib/client";
 
 const Product = ({ product: { image, name, slug, price } }) => {
 	return (
-		<Col md={6}>
+		<Col md={4}>
 			<Link href={`/product/${slug.current}`}>
-				<Card className="hover">
+				<Card className="hover m-4">
 					<Card.Img src={urlFor(image && image[0])} />
 					<Card.Text>{name}</Card.Text>
 					<Card.Text>{price}</Card.Text>

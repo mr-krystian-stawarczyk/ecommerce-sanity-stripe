@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
 	AiFillInstagram,
@@ -14,6 +15,7 @@ function Footer() {
 				<AiOutlineTwitter />
 				<AiOutlineFacebook />
 			</p>
+			<Link href="/terms">Terms & Conditions</Link>
 		</div>
 	);
 }
