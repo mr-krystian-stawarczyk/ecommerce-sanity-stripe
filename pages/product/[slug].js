@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 
 import { useStateContext } from "../../context/StateContext";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 const ProductDetails = ({ product, products }) => {
 	const { image, name, details, price } = product;
@@ -24,96 +24,76 @@ const ProductDetails = ({ product, products }) => {
 		setShowCart(true);
 	};
 	return (
-		<Container>
+		<Container className="mt-5">
 			<Row>
-				<Col>
-					<div style={{ marginTop: "6rem" }}>
-						<div className="product-detail-container">
-							<div>
-								<div className="image-container">
+				<Col className="product-detail-container">
+					<Row>
+						{" "}
+						<Col className="image-container">
+							<img
+								src={urlFor(image && image[index])}
+								className="product-detail-image "
+							/>{" "}
+							<Row>
+								{image?.map((item, i) => (
 									<img
-										src={urlFor(image && image[index])}
-										className="product-detail-image"
+										onMouseEnter={() => setIndex(i)}
+										key={i}
+										src={urlFor(item)}
+										className={
+											i === index ? "small-image selected-image" : "small-image"
+										}
 									/>
-								</div>
-								<div className="small-images-container">
-									{image?.map((item, i) => (
-										<img
-											onMouseEnter={() => setIndex(i)}
-											key={i}
-											src={urlFor(item)}
-											className={
-												i === index
-													? "small-image selected-image"
-													: "small-image"
-											}
-										/>
-									))}
-								</div>
-							</div>
-
-							<div className="product-detail-desc text-dark">
-								<h1> {name}</h1>
-								<div className="reviews">
-									<div>
-										<AiFillStar />
-										<AiFillStar />
-										<AiFillStar />
-										<AiFillStar />
-										<AiOutlineStar />
-									</div>
-									<p>(20)</p>
-								</div>
-								<h4>Details:</h4>
-								<p>{details}</p>
-								<p className="price">${price}</p>
-								<div className="quantity">
-									<h3>Quantity:</h3>
-									<p className="quantity-desc">
-										<span className="minus" onClick={decQty}>
-											<AiOutlineMinus />
-										</span>
-										<span className="num">{qty}</span>
-										<span className="plus" onClick={incQty}>
-											<AiOutlinePlus />
-										</span>
-									</p>
-								</div>
-
-								<div className="buttons">
-									<button
-										type="button"
-										className="add-to-cart"
-										onClick={() => onAdd(product, qty)}
-									>
-										Add to cart
-									</button>
-									<button
-										type="button"
-										className="buy-now"
-										onClick={handleBuyNow}
-									>
-										Buy Now
-									</button>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<h2 className="text-dark text-center mb-5"> You may also like</h2>
-
-							<Container>
-								<Row>
-									{products.map((item) => (
-										<Col className="d-flex " md={3}>
-											<Product key={item._id} product={item} />{" "}
-										</Col>
-									))}
-								</Row>
-							</Container>
-						</div>
-					</div>
+								))}
+							</Row>
+						</Col>
+					</Row>
 				</Col>
+				<Col md={6}>
+					<Col className="product-detail-desc text-dark">
+						<h1> {name}</h1>
+
+						<h4>Details:</h4>
+						<p>{details}</p>
+						<p className="price">€{price}</p>
+						<Col className="quantity">
+							<h3>Quantity:</h3>
+							<p className="quantity-desc">
+								<span className="minus" onClick={decQty}>
+									<AiOutlineMinus />
+								</span>
+								<span className="num">{qty}</span>
+								<span className="plus" onClick={incQty}>
+									<AiOutlinePlus />
+								</span>
+							</p>
+						</Col>
+						<Row>
+							<Col className="buttons">
+								<Button
+									type="button"
+									className="add-to-cart bg-dark"
+									onClick={() => onAdd(product, qty)}
+								>
+									Add to cart
+								</Button>
+								<Button
+									type="button"
+									className="buy-now bg-dark"
+									onClick={handleBuyNow}
+								>
+									Buy Now
+								</Button>
+							</Col>
+						</Row>
+					</Col>
+				</Col>
+				<Row>
+					<h2 className="text-dark text-center mb-5"> You may also like</h2>
+					{products.map((item) => (
+						<Product key={item._id} product={item} />
+					))}
+				</Row>
 			</Row>
 		</Container>
 	);

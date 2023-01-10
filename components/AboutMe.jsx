@@ -50,14 +50,13 @@ function AboutMe() {
 										fontWeight: "bold",
 									}}
 								>
-									Welcome on My site <br></br>I will create every furniture for
-									U
+									Welcome, <br></br>I will create every Furniture for You
 								</Card.Title>
 
 								<Typewriter />
 
-								<Button href="/about" className="bg-dark">
-									About Me
+								<Button href="/shop" className="bg-light text-dark shadow-lg">
+									Shop
 								</Button>
 							</Card.Body>
 						</Card>

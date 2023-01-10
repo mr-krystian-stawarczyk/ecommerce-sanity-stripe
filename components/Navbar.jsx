@@ -38,11 +38,11 @@ const NavbarComp = () => {
 						<Nav.Link as={Link} href="/" className="mx-2">
 							Home
 						</Nav.Link>
-						<Nav.Link as={Link} href="/about" className="mx-2">
-							About
-						</Nav.Link>
 						<Nav.Link as={Link} href="/shop" className="mx-2">
 							Shop
+						</Nav.Link>
+						<Nav.Link as={Link} href="/about" className="mx-2">
+							About
 						</Nav.Link>
 						<Nav.Link as={Link} href="/contact" className="mx-2">
 							Contact

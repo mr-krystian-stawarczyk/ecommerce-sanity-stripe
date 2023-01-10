@@ -7,21 +7,20 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Shop = ({ products, bannerData }) => {
 	return (
-		<>
+		<Container>
 			<HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
-			<div className="products-heading">
-				<h2 className="text-dark">Best Selling Products</h2>
-			</div>
-
-			<div className="products-container">
+			<Row className="products-heading">
+				<Col>
+					<h2 className="text-dark">Best Selling Products</h2>
+				</Col>
+			</Row>
+			<Row>
 				{products?.map((product) => (
 					<Product key={product._id} product={product} />
 				))}
-			</div>
-
-			<FooterBanner footerBanner={bannerData && bannerData[0]} />
-		</>
+			</Row>
+		</Container>
 	);
 };
 

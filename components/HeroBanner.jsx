@@ -57,7 +57,7 @@ const HeroBanner = ({ heroBanner }) => {
 								</Card.Text>
 
 								<Link href={`/product/${heroBanner.product}`}>
-									<Button className="bg-dark" type="button">
+									<Button className="bg-light text-dark" type="button">
 										{heroBanner.buttonText}
 									</Button>
 								</Link>
@@ -68,7 +68,7 @@ const HeroBanner = ({ heroBanner }) => {
 					<Col md={5} sm>
 						<Card className="border-0">
 							<Card.Img
-								className="rounded mt-5 ml-0"
+								className="rounded mt-5 ml-0 shadow-sm"
 								src={urlFor(heroBanner.image)}
 								alt="hero-img"
 							/>

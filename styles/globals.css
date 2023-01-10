@@ -19,7 +19,7 @@ body,
 
 .hover:hover {
 	transform: scale(1.2);
-	transition: 0.3s ease-in-out;
+	transition: 0.5s ease-in-out;
 	z-index: 1;
 }
 
@@ -464,7 +464,6 @@ span.text-red {
 	font-weight: 700;
 	font-size: 26px;
 	margin-top: 30px;
-	color: #f02d34;
 }
 .price .old-price,
 .product-price .old-price,
@@ -484,12 +483,12 @@ span.text-red {
 }
 .buttons .add-to-cart {
 	padding: 10px 20px;
-	border: 1px solid #f02d34;
+
 	margin-top: 40px;
 	font-size: 18px;
 	font-weight: 500;
 	background-color: white;
-	color: #f02d34;
+
 	cursor: pointer;
 	width: 200px;
 	transform: scale(1, 1);
@@ -523,17 +522,6 @@ span.text-red {
 	font-size: 16px;
 	padding: 6px 12px;
 	cursor: pointer;
-}
-.quantity-desc .minus {
-	border-right: 1px solid gray;
-	color: #f02d34;
-}
-.quantity-desc .num {
-	border-right: 1px solid gray;
-	font-size: 20px;
-}
-.quantity-desc .plus {
-	color: rgb(49, 168, 49);
 }
 
 .maylike-products-wrapper {
