@@ -7,6 +7,7 @@ import {
 	HeroBanner,
 	AboutMe,
 	Gallery,
+	Interrested,
 } from "../components";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
 		<>
 			<AboutMe />
 			<Gallery />
+			<Interrested />
 		</>
 	);
 };

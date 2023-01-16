@@ -28,8 +28,31 @@ a {
 	text-decoration: none;
 }
 
-.layout {
-	padding: 10px;
+.aboutBg {
+	background-image: url("/assets/bg1.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.galleryBg {
+	background-image: url("/assets/bg1.jpg");
+
+	background-size: cover;
+}
+
+.bg-ctct {
+	background: #ffefba; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffffff,
+		#ffefba
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#ffefba
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	rotate: 25%;
 }
 
 .navbar-container {
@@ -285,7 +308,7 @@ span.text-red {
 .footer-container {
 	color: #324d67;
 	text-align: center;
-	margin-top: 20px;
+
 	padding: 30px 10px;
 	font-weight: 700;
 	display: flex;

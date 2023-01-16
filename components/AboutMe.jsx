@@ -11,6 +11,7 @@ import {
 
 import Image from "next/image";
 import Typewriter from "../lib/typewriter";
+import { urlFor } from "../lib/client";
 
 function AboutMe() {
 	return (
@@ -18,7 +19,9 @@ function AboutMe() {
 			<Container
 				fluid
 				className="  mt-5 pt-1 rounded "
-				style={{ height: "100vh" }}
+				style={{
+					height: "100vh",
+				}}
 			>
 				<Row
 					style={{
@@ -27,42 +30,40 @@ function AboutMe() {
 					}}
 					className="mt-5 "
 				>
-					<Col md={6} sm className="mx-auto my-auto mt-5">
+					<Col md={5} sm className="mx-auto my-auto mt-5 hover">
 						<Card>
-							<Card.Img src="/assets/hd1.jpg" />
+							<Card.Img src="/assets/hd1.jpg" className="shadow-lg" />
 						</Card>
 					</Col>
-					<Col md={6} sm className="mx-auto my-auto mt-5">
+					<Col md={6} sm className=" ">
 						<Card
 							style={{
-								alignItems: "center",
-								justifyContent: "center",
 								border: "none",
 							}}
-							className="bg-transparent pt-5"
+							className="bg-transparent "
 						>
 							<Card.Body>
 								<Card.Title
 									style={{
-										fontSize: "4vw",
-										lineHeight: "98%",
+										fontSize: "2vw",
 
 										fontWeight: "bold",
 									}}
 								>
-									Welcome, <br></br>I will create every Furniture for You
+									<span>
+										"An artist is someone who produces items that people don't
+										need to have, but - for some reason – thinks it would be a
+										good idea to give them to them" - Andy Warhol
+									</span>
 								</Card.Title>
-
-								<Typewriter />
-
-								<Button href="/shop" className="bg-light text-dark shadow-lg">
-									Shop
-								</Button>
+								<Card.Text>
+									<Typewriter />
+								</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
 				</Row>
-			</Container>
+			</Container>{" "}
 		</>
 	);
 }

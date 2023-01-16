@@ -9,13 +9,13 @@ import {
 function Footer() {
 	return (
 		<div className="footer-container">
-			<p>2023 Square Styling® All Rights Reserved</p>
+			<Link href="/terms">Terms & Conditions</Link>
 			<p className="icons">
 				<AiFillInstagram />
 				<AiOutlineTwitter />
 				<AiOutlineFacebook />
 			</p>
-			<Link href="/terms">Terms & Conditions</Link>
+			<p>2023 Square Styling® All Rights Reserved</p>
 		</div>
 	);
 }

@@ -1,13 +1,20 @@
 import React from "react";
 
 import { client } from "../lib/client";
-import { Product, FooterBanner, HeroBanner, AboutMe } from "../components";
+import {
+	Product,
+	FooterBanner,
+	HeroBanner,
+	AboutMe,
+	Interrested,
+	Commision,
+} from "../components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Shop = ({ products, bannerData }) => {
 	return (
-		<Container>
+		<Container fluid>
 			<HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
 			<Row className="products-heading">
@@ -20,6 +27,7 @@ const Shop = ({ products, bannerData }) => {
 					<Product key={product._id} product={product} />
 				))}
 			</Row>
+			<Commision />
 		</Container>
 	);
 };

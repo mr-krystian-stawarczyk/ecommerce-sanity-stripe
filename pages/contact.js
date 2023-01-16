@@ -19,7 +19,8 @@ import { urlFor } from "../lib/client";
 const Contact = () => {
 	return (
 		<Container
-			className=" rounded"
+			fluid
+			className=" rounded galleryBg"
 			style={{
 				paddingBottom: "3rem",
 			}}
@@ -32,9 +33,9 @@ const Contact = () => {
 							justifyContent: "center",
 							border: "none",
 						}}
-						className="  pt-5"
+						className="bg-transparent  pt-5"
 					>
-						<Card.Body>
+						<Card.Body className="">
 							<Card.Title
 								style={{
 									fontSize: "5vw",
@@ -78,7 +79,7 @@ const Contact = () => {
 
 			<Row className="  mt-5 pt-5">
 				<Col
-					md={6}
+					md={2}
 					sm
 					className="mx-auto my-auto d-block justify-content-md-center"
 					style={{
@@ -101,7 +102,7 @@ const Contact = () => {
 							justifyContent: "center",
 							border: "none",
 						}}
-						className="  pt-5"
+						className=" bg-transparent pt-5"
 					>
 						<Card.Body>
 							<Card.Title

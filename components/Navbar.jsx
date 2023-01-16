@@ -41,9 +41,6 @@ const NavbarComp = () => {
 						<Nav.Link as={Link} href="/shop" className="mx-2">
 							Shop
 						</Nav.Link>
-						<Nav.Link as={Link} href="/about" className="mx-2">
-							About
-						</Nav.Link>
 						<Nav.Link as={Link} href="/commision" className="mx-2">
 							Commision
 						</Nav.Link>
