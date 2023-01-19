@@ -7,10 +7,13 @@ const Product = ({ product: { image, name, slug, price } }) => {
 	return (
 		<Col md={4}>
 			<Link href={`/product/${slug.current}`}>
-				<Card className="hover m-4">
-					<Card.Img src={urlFor(image && image[0])} />
+				<Card className="border-0 m-4">
+					<Card.Img
+						src={urlFor(image && image[0])}
+						style={{ height: "450px" }}
+					/>
 					<Card.Text>{name}</Card.Text>
-					<Card.Text>{price}</Card.Text>
+					<Card.Text>{price}€</Card.Text>
 				</Card>
 			</Link>
 		</Col>

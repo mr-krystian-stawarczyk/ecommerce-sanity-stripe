@@ -25,13 +25,13 @@ const ProductDetails = ({ product, products }) => {
 	};
 	return (
 		<Container className="mt-5 " fluid>
-			<Row className="pt-5 galleryBg pb-5">
-				<Col md={6} className="ml-2">
+			<Row className="pt-5 galleryBg pb-5 justify-content-around">
+				<Col md={5} className="">
 					<Row>
-						<Card className="border-0 p-0 m-2 hover">
+						<Card className="border-0 p-0 m-2 ">
 							<Card.Img
 								src={urlFor(image && image[index])}
-								className="rounded p-3"
+								className="rounded "
 								style={{ maxHeight: "500px" }}
 							></Card.Img>
 						</Card>
@@ -53,7 +53,7 @@ const ProductDetails = ({ product, products }) => {
 						</Col>
 					</Row>
 				</Col>
-				<Col md={6}>
+				<Col md={5}>
 					<Col className="product-detail-desc text-dark ">
 						<h1> {name}</h1>
 
@@ -62,7 +62,7 @@ const ProductDetails = ({ product, products }) => {
 						<p className="price">€{price}</p>
 						<Col className="quantity">
 							<h3>Quantity:</h3>
-							<p className="quantity-desc">
+							<p className="quantity-desc bg-light rounded">
 								<span className="minus" onClick={decQty}>
 									<AiOutlineMinus />
 								</span>

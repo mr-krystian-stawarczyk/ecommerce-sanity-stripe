@@ -8,7 +8,7 @@ function Commision() {
 				<Col className="my-5">
 					<Card className="border-0 bg-transparent ">
 						<Card.Title>
-							Square Style offers customized commission works. In dialogue with
+							Studio Ro offers customized commission works. In dialogue with
 							clients we makes special orders on desired dimensions, series and
 							tone.
 						</Card.Title>
@@ -35,60 +35,34 @@ function Commision() {
 							src="/assets/gl9.jpg"
 							style={{ maxHeight: "900px" }}
 						/>
-						<Card.Body>
-							<Card.Text>
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</Card.Text>
-						</Card.Body>
 					</Card>
 				</Col>
 
 				<Row className="justify-content-md-center">
 					<Col md={5} className="mx-2 my-2">
-						<Card className=" rounded hover">
+						<Card className=" rounded ">
 							<Card.Img variant="top" src="/assets/gl7.jpg" />
-							<Card.Body>
-								<Card.Text>
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</Card.Text>
-							</Card.Body>
 						</Card>
 					</Col>
 					<Col md={5} className="mx-2 my-2">
-						<Card className=" rounded hover">
+						<Card className=" rounded ">
 							<Card.Img variant="top" src="/assets/gl8.jpg" />
-							<Card.Body>
-								<Card.Text>
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</Card.Text>
-							</Card.Body>
 						</Card>
 					</Col>
 
 					<Row className="justify-content-md-center">
 						<Col md={5} className="mx-2 my-2">
-							<Card className="hover rounded">
+							<Card className=" rounded">
 								<Card.Img variant="top" src="/assets/gl12.jpg" />
-								<Card.Body>
-									<Card.Text>
-										Some quick example text to build on the card title and make
-										up the bulk of the card's content.
-									</Card.Text>
-								</Card.Body>
 							</Card>
 						</Col>
 						<Col md={5} className="mx-2 my-2">
-							<Card className="hover rounded">
-								<Card.Img variant="top" src="/assets/gl11.jpg" />
-								<Card.Body>
-									<Card.Text>
-										Some quick example text to build on the card title and make
-										up the bulk of the card's content.
-									</Card.Text>
-								</Card.Body>
+							<Card className=" rounded">
+								<Card.Img
+									variant="top"
+									src="/assets/gl11.jpg"
+									style={{ maxHeight: "590px" }}
+								/>
 							</Card>
 						</Col>{" "}
 					</Row>
@@ -100,26 +74,20 @@ function Commision() {
 						}}
 					>
 						<Col md={5} className="mx-2 my-2">
-							<Card className="hover rounded">
+							<Card className=" rounded">
 								<Card.Img variant="top" src="/assets/gl13.jpg" />
-								<Card.Body>
-									<Card.Text>
-										Some quick example text to build on the card title and make
-										up the bulk of the card's content.
-									</Card.Text>
-								</Card.Body>
 							</Card>
 						</Col>{" "}
 						<Col md={5} className="mx-2 my-2">
-							<Card className=" rounded border-0 hover">
+							<Card className=" rounded border-0 ">
 								<Card.Body>
-									<Card.Text>
-										Square Style closely collaborates with a frame workshop if
-										you wish to have the painting framed. However, the artworks
-										are also beautiful without a frame. The frame is painted
-										with a white glaze that keeps the wood structure.
+									<Card.Text style={{ fontWeight: "bold" }}>
+										Studio Ro closely collaborates with a frame workshop if you
+										wish to have the painting framed. However, the artworks are
+										also beautiful without a frame. The frame is painted with a
+										white glaze that keeps the wood structure.
 									</Card.Text>
-									<Button href="/shop" className="bg-dark">
+									<Button href="/shop" className="bg-dark hover">
 										Shop
 									</Button>
 								</Card.Body>

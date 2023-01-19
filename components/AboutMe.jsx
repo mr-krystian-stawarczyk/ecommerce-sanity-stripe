@@ -30,7 +30,7 @@ function AboutMe() {
 					}}
 					className="mt-5 "
 				>
-					<Col md={5} sm className="mx-auto my-auto mt-5 hover">
+					<Col md={5} sm className="mx-auto my-auto mt-5 ">
 						<Card>
 							<Card.Img src="/assets/hd1.jpg" className="shadow-lg" />
 						</Card>
@@ -42,21 +42,33 @@ function AboutMe() {
 							}}
 							className="bg-transparent "
 						>
-							<Card.Body>
+							<Card.Body className="text-center">
 								<Card.Title
 									style={{
-										fontSize: "2vw",
-
 										fontWeight: "bold",
 									}}
 								>
-									<span>
-										"An artist is someone who produces items that people don't
-										need to have, but - for some reason – thinks it would be a
-										good idea to give them to them" - Andy Warhol
-									</span>
+									<h5>
+										Somewhere near Linkoping, in southern Sweden, Magdalena
+										Lapinska creates and pursues her passions in her Studio Ro.
+									</h5>{" "}
+									<br></br>
+									<h5>
+										A construction engineer by education, an interior designer
+										and stylist by passion, great enthusiast of good design,
+										architecture and minimalism in every edition. In interior
+										design, he successfully uses his own paintings, sculptures
+										and handmade lamps.
+									</h5>
+									<br></br>{" "}
+									<h5>
+										Inspired by the beauty and raw nature of Scandinavian
+										nature, she creates unique, structural paintings and 3D
+										objects, experimenting with various techniques. Magdalena
+										wants to share this art with you on this website.
+									</h5>
 								</Card.Title>
-								<Card.Text>
+								<Card.Text className="mt-5">
 									<Typewriter />
 								</Card.Text>
 							</Card.Body>

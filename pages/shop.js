@@ -15,11 +15,25 @@ import { Container, Row, Col } from "react-bootstrap";
 const Shop = ({ products, bannerData }) => {
 	return (
 		<Container fluid>
-			<HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-
 			<Row className="products-heading">
-				<Col>
-					<h2 className="text-dark">Best Selling Products</h2>
+				<Col className="mt-5 text-dark">
+					<h2>"What is beautiful never dies, but comes in another beauty…"</h2>
+					<h2
+						style={{
+							textAlign: "end",
+							marginRight: "2rem",
+						}}
+					>
+						Thomas Bailey Aldrich{" "}
+					</h2>
+				</Col>
+			</Row>
+			<Row className="m-5 text-center">
+				<Col className="m-5">
+					<h2>
+						Exhibited below is a selection of available artworks and 3D objects
+						crafted by hand in Studio Ro by Magdalena Lapinska.
+					</h2>
 				</Col>
 			</Row>
 			<Row>
