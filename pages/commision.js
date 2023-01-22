@@ -8,7 +8,7 @@ function Commision() {
 				<Col className="my-5">
 					<Card className="border-0 bg-transparent ">
 						<Card.Title>
-							Studio Ro offers customized commission works. In dialogue with
+							Studio Mo offers customized commission works. In dialogue with
 							clients we makes special orders on desired dimensions, series and
 							tone.
 						</Card.Title>
@@ -20,7 +20,7 @@ function Commision() {
 						</Card.Text>
 					</Card>
 					<Row style={{ justifyContent: "center" }}>
-						<Button className="bg-dark" href="/contact">
+						<Button className="bg-light text-dark shadow-lg" href="/contact">
 							Enquire for more information
 						</Button>
 					</Row>
@@ -34,6 +34,7 @@ function Commision() {
 							variant="top"
 							src="/assets/gl9.jpg"
 							style={{ maxHeight: "900px" }}
+							className="rounded shadow-lg"
 						/>
 					</Card>
 				</Col>
@@ -41,19 +42,31 @@ function Commision() {
 				<Row className="justify-content-md-center">
 					<Col md={5} className="mx-2 my-2">
 						<Card className=" rounded ">
-							<Card.Img variant="top" src="/assets/gl7.jpg" />
+							<Card.Img
+								variant="top"
+								src="/assets/gl7.jpg"
+								className="rounded shadow-lg"
+							/>
 						</Card>
 					</Col>
 					<Col md={5} className="mx-2 my-2">
-						<Card className=" rounded ">
-							<Card.Img variant="top" src="/assets/gl8.jpg" />
+						<Card className="rounded ">
+							<Card.Img
+								variant="top"
+								src="/assets/gl8.jpg"
+								className="rounded shadow-lg"
+							/>
 						</Card>
 					</Col>
 
 					<Row className="justify-content-md-center">
 						<Col md={5} className="mx-2 my-2">
 							<Card className=" rounded">
-								<Card.Img variant="top" src="/assets/gl12.jpg" />
+								<Card.Img
+									variant="top"
+									src="/assets/gl12.jpg"
+									className="rounded shadow-lg"
+								/>
 							</Card>
 						</Col>
 						<Col md={5} className="mx-2 my-2">
@@ -61,13 +74,14 @@ function Commision() {
 								<Card.Img
 									variant="top"
 									src="/assets/gl11.jpg"
-									style={{ maxHeight: "590px" }}
+									style={{ maxHeight: "750px" }}
+									className="rounded shadow-lg"
 								/>
 							</Card>
 						</Col>{" "}
 					</Row>
 					<Row
-						className="justify-content-md-center"
+						className="justify-content-md-center text-center"
 						style={{
 							alignItems: "center",
 							justifyContent: "center",
@@ -75,19 +89,30 @@ function Commision() {
 					>
 						<Col md={5} className="mx-2 my-2">
 							<Card className=" rounded">
-								<Card.Img variant="top" src="/assets/gl13.jpg" />
+								<Card.Img
+									variant="top"
+									src="/assets/gl13.jpg"
+									className="rounded shadow-lg"
+								/>
 							</Card>
 						</Col>{" "}
 						<Col md={5} className="mx-2 my-2">
 							<Card className=" rounded border-0 ">
 								<Card.Body>
-									<Card.Text style={{ fontWeight: "bold" }}>
-										Studio Ro closely collaborates with a frame workshop if you
-										wish to have the painting framed. However, the artworks are
-										also beautiful without a frame. The frame is painted with a
-										white glaze that keeps the wood structure.
+									<Card.Title>
+										Studio Mo closely collaborates with a frame workshop if you
+										wish to have the painting framed.
+									</Card.Title>
+									<Card.Text>
+										However, the artworks are also beautiful without a frame.
+										The frame is painted with a white glaze that keeps the wood
+										structure.
 									</Card.Text>
-									<Button href="/shop" className="bg-dark hover">
+									<Button
+										href="/shop"
+										className="bg-light text-dark hover shadow-lg"
+										style={{ maxWidth: "150px" }}
+									>
 										Shop
 									</Button>
 								</Card.Body>

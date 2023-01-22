@@ -11,26 +11,17 @@ import {
 } from "react-bootstrap";
 function canceled() {
 	return (
-		<Container>
-			<Row className="my-5 rounded">
+		<Container className="mt-5">
+			<Row className="mt-5 rounded justify-content-md-center">
 				<Col md={7} sm className="  my-5 ">
 					<Card
 						style={{
-							alignItems: "center",
-							justifyContent: "center",
 							border: "none",
 						}}
-						className="bg-transparent  pt-5"
+						className="bg-transparent text-center  pt-5"
 					>
 						<Card.Body>
-							<Card.Title
-								style={{
-									fontSize: "5vw",
-									lineHeight: "98%",
-
-									fontWeight: "bold",
-								}}
-							>
+							<Card.Title>
 								Your Order Is Canceled Something Went Wrong
 							</Card.Title>
 
@@ -42,7 +33,7 @@ function canceled() {
 									className="mb-3 "
 									style={{ width: "160px", height: "50px" }}
 								>
-									<Button href="/" className="bg-dark">
+									<Button href="/" className="bg-light text-dark shadow-lg">
 										{" "}
 										Home
 									</Button>

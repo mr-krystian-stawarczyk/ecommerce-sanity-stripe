@@ -10,7 +10,7 @@ import { TiDeleteOutline } from "react-icons/ti";
 import { toast } from "react-hot-toast";
 import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 import getStripe from "../lib/getStripe";
 
@@ -64,13 +64,13 @@ const Cart = () => {
 							<AiOutlineShopping size={150} />
 							<h3>Your shopping bag is empty</h3>
 							<Link href="/shop">
-								<button
+								<Button
 									type="button"
 									onClick={() => setShowCart(false)}
-									className="btn"
+									className="bg-light text-dark shadow-lg"
 								>
 									Continue Shopping
-								</button>
+								</Button>
 							</Link>
 						</div>
 					)}

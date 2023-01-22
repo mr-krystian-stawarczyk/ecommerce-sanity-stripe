@@ -25,7 +25,7 @@ const ProductDetails = ({ product, products }) => {
 	};
 	return (
 		<Container className="mt-5 " fluid>
-			<Row className="pt-5 galleryBg pb-5 justify-content-around">
+			<Row className="pt-5  pb-5 justify-content-around">
 				<Col md={5} className="">
 					<Row>
 						<Card className="border-0 p-0 m-2 ">
@@ -54,36 +54,38 @@ const ProductDetails = ({ product, products }) => {
 					</Row>
 				</Col>
 				<Col md={5}>
-					<Col className="product-detail-desc text-dark ">
-						<h1> {name}</h1>
+					<Col className="product-detail-desc text-dark mt-5 ">
+						<Card className="border-0">
+							<Card.Title className="my-2">{name}</Card.Title>
+							<Card.Title className="my-2">Details:</Card.Title>
+							<Card.Text className="my-2">{details}</Card.Text>
+							<Card.Title className="my-2">€{price}</Card.Title>
+							<Card.Title className="my-2">Quantity:</Card.Title>
+							<Card.Text style={{ maxWidth: "135px" }}>
+								<span className="quantity-desc bg-light rounded">
+									<span className="minus" onClick={decQty}>
+										<AiOutlineMinus />
+									</span>
+									<span className="num">{qty}</span>
+									<span className="plus" onClick={incQty}>
+										<AiOutlinePlus />
+									</span>
+								</span>
+							</Card.Text>
+						</Card>
 
-						<h4>Details:</h4>
-						<p>{details}</p>
-						<p className="price">€{price}</p>
-						<Col className="quantity">
-							<h3>Quantity:</h3>
-							<p className="quantity-desc bg-light rounded">
-								<span className="minus" onClick={decQty}>
-									<AiOutlineMinus />
-								</span>
-								<span className="num">{qty}</span>
-								<span className="plus" onClick={incQty}>
-									<AiOutlinePlus />
-								</span>
-							</p>
-						</Col>
 						<Row>
 							<Col className="buttons">
 								<Button
 									type="button"
-									className="add-to-cart bg-dark"
+									className="add-to-cart bg-light text-dark shadow-lg"
 									onClick={() => onAdd(product, qty)}
 								>
 									Add to cart
 								</Button>
 								<Button
 									type="button"
-									className="buy-now bg-dark"
+									className="buy-now bg-light text-dark shadow-lg"
 									onClick={handleBuyNow}
 								>
 									Buy Now
@@ -94,8 +96,14 @@ const ProductDetails = ({ product, products }) => {
 				</Col>
 			</Row>
 
-			<Row className="mt-3">
-				<h2 className="text-dark text-center mb-5 mt-5"> You may also like</h2>
+			<Row className="mt-3 justify-content-md-center">
+				<Col md={3}>
+					<Card className="border-0 text-center my-3">
+						<Card.Title>You may also like</Card.Title>
+					</Card>
+				</Col>
+			</Row>
+			<Row>
 				{products.map((item) => (
 					<Product key={item._id} product={item} />
 				))}

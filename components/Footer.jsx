@@ -11,11 +11,19 @@ function Footer() {
 		<div className="footer-container">
 			<Link href="/terms">Terms & Conditions</Link>
 			<p className="icons">
-				<AiFillInstagram className="hover" />
-				<FaTiktok className="hover" />
-				<AiOutlineFacebook className="hover" />
+				<a href="https://www.instagram.com/studio_mo_m/">
+					{" "}
+					<AiFillInstagram className="hover" />
+				</a>
+
+				<a>
+					<FaTiktok className="hover" />
+				</a>
+				<a>
+					<AiOutlineFacebook className="hover" />
+				</a>
 			</p>
-			<p>2023 Studio Ro® All Rights Reserved</p>
+			<p>2023 Studio Mo® All Rights Reserved</p>
 		</div>
 	);
 }

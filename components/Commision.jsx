@@ -11,18 +11,18 @@ function Commision() {
 			}}
 		>
 			<Row className=" rounded  mt-5 pt-5">
-				<Col md={6} sm className="mx-auto my-auto  ">
+				<Col md={4} sm className="mx-auto my-auto  ">
 					<video
 						autoPlay
 						loop
 						muted
 						style={{ maxWidth: "700px", maxHeight: "700px" }}
-						className="rounded"
+						className="rounded videoBg"
 					>
 						<source src="/assets/videoBg.mp4" />
 					</video>
 				</Col>
-				<Col md={6} sm className="mx-auto my-auto ">
+				<Col md={4} sm className="mx-auto my-auto ">
 					<Card
 						style={{
 							alignItems: "center",
@@ -31,22 +31,17 @@ function Commision() {
 						}}
 						className="bg-transparent  pt-5"
 					>
+						{" "}
+						<Card.Title>Looking For Something Unique ?</Card.Title>
 						<Card.Body className="">
-							<Card.Title
-								style={{
-									fontSize: "4vw",
-									lineHeight: "98%",
-
-									fontWeight: "bold",
-								}}
-							>
-								Looking For Something Unique ?
-							</Card.Title>
-
 							<Card.Text>See what We can do fo You</Card.Text>
 							<Col className="btn-group "></Col>
 
-							<Button className="bg-dark" href="/commision">
+							<Button
+								className="bg-light text-dark shadow-lg"
+								href="/commision"
+								style={{ maxWidth: "150px" }}
+							>
 								Commision
 							</Button>
 						</Card.Body>
