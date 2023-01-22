@@ -75,7 +75,7 @@ const Contact = () => {
 							</Card.Body>
 							<Button
 								href="/"
-								className="bg-light text-dark shadow-lg "
+								className="bg-dark text-light shadow-lg "
 								style={{ maxWidth: "150px" }}
 							>
 								Home

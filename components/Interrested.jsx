@@ -26,14 +26,14 @@ function Interrested() {
 							<Card.Text>Discover More!</Card.Text>
 
 							<Button
-								className="bg-light text-dark shadow-lg "
+								className="bg-dark text-light shadow-lg "
 								href="/shop"
 								style={{ maxWidth: "150px" }}
 							>
 								Shop
 							</Button>
 							<Button
-								className="bg-light text-dark shadow-lg"
+								className="bg-dark text-light shadow-lg"
 								href="/commision"
 								style={{ maxWidth: "150px" }}
 							>

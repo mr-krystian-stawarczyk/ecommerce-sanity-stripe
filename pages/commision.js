@@ -20,7 +20,7 @@ function Commision() {
 						</Card.Text>
 					</Card>
 					<Row style={{ justifyContent: "center" }}>
-						<Button className="bg-light text-dark shadow-lg" href="/contact">
+						<Button className="bg-dark text-light shadow-lg" href="/contact">
 							Enquire for more information
 						</Button>
 					</Row>
@@ -110,7 +110,7 @@ function Commision() {
 									</Card.Text>
 									<Button
 										href="/shop"
-										className="bg-light text-dark hover shadow-lg"
+										className="bg-dark text-light hover shadow-lg"
 										style={{ maxWidth: "150px" }}
 									>
 										Shop

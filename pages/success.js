@@ -4,6 +4,7 @@ import { BsBagCheckFill } from "react-icons/bs";
 import { runFireworks } from "../lib/utils";
 
 import { useStateContext } from "../context/StateContext";
+import { Button } from "react-bootstrap";
 
 const Success = () => {
 	const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
@@ -27,14 +28,14 @@ const Success = () => {
 				<p className="description">
 					If You have any questions please e-mail at:
 					<a className="email" href="mailto:order@example.com">
-						order@example.com
+						help@studiomo.se
 					</a>
 				</p>
 
 				<Link href="/">
-					<button type="button" width="300px" className="btn">
+					<Button type="button" width="300px" className="bg-dark text-light">
 						Continue Shopping
-					</button>
+					</Button>
 				</Link>
 			</div>
 		</div>

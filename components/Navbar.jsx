@@ -23,7 +23,7 @@ const NavbarComp = () => {
 		>
 			<Container>
 				<Navbar.Brand href="/">
-					<span>Studio Mo®</span>
+					<h4>Studio Mo®</h4>
 				</Navbar.Brand>
 
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />

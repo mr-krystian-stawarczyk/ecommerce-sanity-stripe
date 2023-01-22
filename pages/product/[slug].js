@@ -78,14 +78,14 @@ const ProductDetails = ({ product, products }) => {
 							<Col className="buttons">
 								<Button
 									type="button"
-									className="add-to-cart bg-light text-dark shadow-lg"
+									className="add-to-cart bg-dark text-light shadow-lg"
 									onClick={() => onAdd(product, qty)}
 								>
 									Add to cart
 								</Button>
 								<Button
 									type="button"
-									className="buy-now bg-light text-dark shadow-lg"
+									className="buy-now bg-dark text-light shadow-lg"
 									onClick={handleBuyNow}
 								>
 									Buy Now

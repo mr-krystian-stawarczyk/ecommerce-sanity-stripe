@@ -67,7 +67,7 @@ const Cart = () => {
 								<Button
 									type="button"
 									onClick={() => setShowCart(false)}
-									className="bg-light text-dark shadow-lg"
+									className="bg-dark text-light shadow-lg"
 								>
 									Continue Shopping
 								</Button>

@@ -38,7 +38,7 @@ function Commision() {
 							<Col className="btn-group "></Col>
 
 							<Button
-								className="bg-light text-dark shadow-lg"
+								className="bg-dark text-light shadow-lg"
 								href="/commision"
 								style={{ maxWidth: "150px" }}
 							>
