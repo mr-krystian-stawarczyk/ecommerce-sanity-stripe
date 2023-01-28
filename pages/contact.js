@@ -38,7 +38,7 @@ const Contact = () => {
 									style={{ fontWeight: "bold", fontSize: "2rem" }}
 								>
 									<AiOutlineMail style={{ fontSize: "3rem" }} />
-									studio.mo@mail.com
+									art@studiomo.se
 								</span>
 								<br></br>
 								<span>

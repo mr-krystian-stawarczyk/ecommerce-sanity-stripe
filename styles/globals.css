@@ -466,6 +466,7 @@ span.text-red {
 	width: 70px;
 	height: 70px;
 	cursor: pointer;
+	margin: 0.5rem;
 }
 
 .selected-image {

@@ -1,14 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { client } from "../lib/client";
-import {
-	Product,
-	FooterBanner,
-	HeroBanner,
-	AboutMe,
-	Gallery,
-	Interrested,
-} from "../components";
+import { AboutMe, Gallery, Interrested } from "../components";
 
 const Home = () => {
 	return (

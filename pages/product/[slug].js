@@ -26,7 +26,7 @@ const ProductDetails = ({ product, products }) => {
 	return (
 		<Container className="mt-5 " fluid>
 			<Row className="pt-5  pb-5 justify-content-around">
-				<Col md={5} className="">
+				<Col md={4} className="">
 					<Row>
 						<Card className="border-0 p-0 m-2 ">
 							<Card.Img
@@ -60,18 +60,6 @@ const ProductDetails = ({ product, products }) => {
 							<Card.Title className="my-2">Details:</Card.Title>
 							<Card.Text className="my-2">{details}</Card.Text>
 							<Card.Title className="my-2">€{price}</Card.Title>
-							<Card.Title className="my-2">Quantity:</Card.Title>
-							<Card.Text style={{ maxWidth: "135px" }}>
-								<span className="quantity-desc bg-light rounded">
-									<span className="minus" onClick={decQty}>
-										<AiOutlineMinus />
-									</span>
-									<span className="num">{qty}</span>
-									<span className="plus" onClick={incQty}>
-										<AiOutlinePlus />
-									</span>
-								</span>
-							</Card.Text>
 						</Card>
 
 						<Row>
@@ -83,6 +71,7 @@ const ProductDetails = ({ product, products }) => {
 								>
 									Add to cart
 								</Button>
+
 								<Button
 									type="button"
 									className="buy-now bg-dark text-light shadow-lg"
@@ -104,7 +93,7 @@ const ProductDetails = ({ product, products }) => {
 				</Col>
 			</Row>
 			<Row>
-				{products.map((item) => (
+				{products?.map((item) => (
 					<Product key={item._id} product={item} />
 				))}
 			</Row>
@@ -114,9 +103,9 @@ const ProductDetails = ({ product, products }) => {
 
 export const getStaticPaths = async () => {
 	const query = `*[_type == "product"] {
-      slug {
+		slug {
         current
-      }
+}
     }`;
 
 	const products = await client.fetch(query);

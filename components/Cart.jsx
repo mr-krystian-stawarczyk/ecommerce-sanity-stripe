@@ -44,6 +44,7 @@ const Cart = () => {
 
 		stripe.redirectToCheckout({ sessionId: data.id });
 	};
+
 	return (
 		<div className="cart-wrapper" ref={cartRef}>
 			<div className="cart-container">
@@ -94,23 +95,7 @@ const Cart = () => {
 									<div className="flex bottom">
 										<div>
 											<p className="quantity-desc">
-												<span
-													className="minus"
-													onClick={() =>
-														toggleCartItemQuantity(item._id, "dec")
-													}
-												>
-													<AiOutlineMinus />
-												</span>
-												<span className="num">{item.quantity}</span>
-												<span
-													className="plus"
-													onClick={() =>
-														toggleCartItemQuantity(item._id, "inc")
-													}
-												>
-													<AiOutlinePlus />
-												</span>
+												<span className="num">Quantity: {item.quantity} </span>
 											</p>
 										</div>
 

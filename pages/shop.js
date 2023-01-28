@@ -1,14 +1,7 @@
 import React from "react";
 
 import { client } from "../lib/client";
-import {
-	Product,
-	FooterBanner,
-	HeroBanner,
-	AboutMe,
-	Interrested,
-	Commision,
-} from "../components";
+import { Product, Commision } from "../components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
@@ -46,7 +39,7 @@ const Shop = ({ products, bannerData }) => {
 };
 
 export const getServerSideProps = async () => {
-	const query = '*[_type == "product"]';
+	const query = '*[_type == "product"] | order(createdAt desc)';
 	const products = await client.fetch(query);
 
 	const bannerQuery = '*[_type == "banner"]';

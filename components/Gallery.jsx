@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-import Image from "next/image";
 const Gallery = () => {
 	return (
 		<Container fluid className="justify-content-md-center ">
