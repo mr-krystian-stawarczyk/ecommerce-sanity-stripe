@@ -34,11 +34,19 @@ a {
 
 @media screen and (max-width: 768px) {
 	.videoBg {
-		width: 450px;
+		width: 250px !important;
 		margin-left: 0.5rem;
 	}
 	.cart-icon {
 		margin-left: 1rem;
+	}
+	.gallery {
+		margin-top: 1rem !important;
+		margin-left: 2rem;
+	}
+
+	.about {
+		margin-left: 2rem;
 	}
 }
 
@@ -51,10 +59,18 @@ a {
 	.header-text {
 		display: none;
 	}
-
 	.gallery {
-		margin-top: 5rem;
+		margin-top: 1rem !important;
+		margin-left: 1rem;
 	}
+
+	.produkt {
+		margin-left: 4rem;
+	}
+}
+
+.gallery {
+	margin-top: 10rem;
 }
 
 .aboutBg {

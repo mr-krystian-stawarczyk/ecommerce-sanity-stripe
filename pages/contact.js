@@ -62,7 +62,7 @@ const Contact = () => {
 								<Card.Title>Follow Us Online</Card.Title>
 
 								<Card.Text style={{ fontSize: "3rem" }} className="text-center">
-									<a>
+									<a href="https://www.facebook.com/StudioMoM7/">
 										<BsFacebook className="mx-3 rounded p-2  hover" />
 									</a>
 									<a href="https://www.instagram.com/studio_mo_m/">

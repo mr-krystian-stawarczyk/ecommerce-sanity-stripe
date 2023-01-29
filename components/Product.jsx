@@ -5,7 +5,7 @@ import { urlFor } from "../lib/client";
 
 const Product = ({ product: { image, name, slug, price } }) => {
 	return (
-		<Col lg={4} md={12} sm={12}>
+		<Col lg={4} md={10} sm={10} className="produkt">
 			<Link href={`/product/${slug.current}`}>
 				<Card className="border-0 m-4 shadow-lg ">
 					<Card.Img

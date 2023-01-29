@@ -16,13 +16,7 @@ import { urlFor } from "../lib/client";
 function AboutMe() {
 	return (
 		<>
-			<Container
-				fluid
-				className="  mt-5 pt-1 rounded "
-				style={{
-					height: "100vh",
-				}}
-			>
+			<Container fluid className="  my-5 pt-1 rounded about">
 				<Row
 					style={{
 						alignItems: "center",
@@ -30,12 +24,12 @@ function AboutMe() {
 					}}
 					className="mt-5 "
 				>
-					<Col md={5} sm className="mx-auto my-auto mt-5 ">
+					<Col md={5} className="mx-auto my-auto mt-5 ">
 						<Card className="shadow-lg">
 							<Card.Img src="/assets/hd1.jpg" className="shadow-lg" />
 						</Card>
 					</Col>
-					<Col md={6} sm className=" ">
+					<Col md={6} className=" ">
 						<Card
 							style={{
 								border: "none",
@@ -60,7 +54,7 @@ function AboutMe() {
 						</Card>
 					</Col>
 				</Row>
-			</Container>{" "}
+			</Container>
 		</>
 	);
 }

@@ -28,7 +28,7 @@ const Shop = ({ products, bannerData }) => {
 					</Card>
 				</Col>
 			</Row>
-			<Row>
+			<Row className="justify-content-md-center">
 				{products?.map((product) => (
 					<Product key={product._id} product={product} />
 				))}

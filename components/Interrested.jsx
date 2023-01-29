@@ -51,7 +51,7 @@ function Interrested() {
 							maxWidth: "700px",
 							maxHeight: "700px",
 						}}
-						className="rounded videoBg"
+						className="rounded videoBg mx-5"
 					>
 						<source src="/assets/videoBg.mp4" />
 					</video>

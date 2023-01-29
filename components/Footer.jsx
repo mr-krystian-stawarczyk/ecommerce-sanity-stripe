@@ -19,7 +19,7 @@ function Footer() {
 				<a>
 					<FaTiktok className="hover" />
 				</a>
-				<a>
+				<a href="https://www.facebook.com/StudioMoM7/ ">
 					<AiOutlineFacebook className="hover" />
 				</a>
 			</p>

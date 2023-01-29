@@ -3,16 +3,16 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 const Gallery = () => {
 	return (
-		<Container fluid className="justify-content-md-center gallery">
-			<Row className="text-center align-items-md-center justify-content-md-center">
-				<Col md={8}>
-					<Card className="border-0 mb-4">
+		<Container fluid className="gallery ">
+			<Row className="text-center align-items-md-center justify-content-md-center ">
+				<Col md={8} className="">
+					<Card className="border-0 my-5">
 						<Card.Title>Gallery</Card.Title>
 					</Card>
 				</Col>
 			</Row>
 
-			<Row className="justify-content-md-center">
+			<Row className="justify-content-md-center ">
 				<Col md={10} className="mx-2 my-2 ">
 					<Card className=" rounded shadow-lg  border-0">
 						<Card.Img
