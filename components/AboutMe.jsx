@@ -47,6 +47,7 @@ function AboutMe() {
 									style={{
 										fontWeight: "bold",
 									}}
+									className=" header-text"
 								>
 									An artist is someone who produces items that people don't need
 									to have, but - for some reason – thinks it would be a good

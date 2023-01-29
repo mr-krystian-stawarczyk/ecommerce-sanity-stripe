@@ -28,7 +28,7 @@ const ProductDetails = ({ product, products }) => {
 			<Row className="pt-5  pb-5 justify-content-around">
 				<Col md={4} className="">
 					<Row>
-						<Card className="border-0 p-0 m-2 ">
+						<Card className="border-0  m-2 ">
 							<Card.Img
 								src={urlFor(image && image[index])}
 								className="rounded "
@@ -37,7 +37,7 @@ const ProductDetails = ({ product, products }) => {
 						</Card>
 					</Row>
 					<Row>
-						<Col md={5} className="m-2 p-2">
+						<Col md={10} sm={10} className="m-2 p-2 ">
 							{image?.map((item, i) => (
 								<img
 									onMouseEnter={() => setIndex(i)}

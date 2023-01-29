@@ -20,6 +20,7 @@ const NavbarComp = () => {
 				height: "70px",
 			}}
 			className="  bg-white"
+			collapseOnSelect
 		>
 			<Container>
 				<Navbar.Brand href="/">
@@ -29,7 +30,7 @@ const NavbarComp = () => {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse
 					id="basic-navbar-nav"
-					className="bg-white rounded justify-content-end"
+					className="bg-white rounded justify-content-end "
 					style={{
 						height: "70px",
 					}}
@@ -49,18 +50,19 @@ const NavbarComp = () => {
 						</Nav.Link>
 						<Nav.Link as={Link} href="/faq" className="mx-2">
 							Faq
-						</Nav.Link>{" "}
+						</Nav.Link>
 					</Nav>
-
-					<Button
-						type="button"
-						className="cart-icon mb-5 bg-dark "
-						onClick={() => setShowCart(true)}
-						style={{ width: "50px" }}
-					>
-						<AiOutlineShopping />
-						<span className="cart-item-qty">{totalQuantities}</span>
-					</Button>
+					<Nav.Item>
+						<Button
+							type="button"
+							className="cart-icon mb-5 bg-dark "
+							onClick={() => setShowCart(true)}
+							style={{ width: "50px" }}
+						>
+							<AiOutlineShopping />
+							<span className="cart-item-qty">{totalQuantities}</span>
+						</Button>
+					</Nav.Item>
 
 					{showCart && <Cart />}
 				</Navbar.Collapse>

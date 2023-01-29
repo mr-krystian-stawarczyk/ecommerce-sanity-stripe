@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 const Gallery = () => {
 	return (
-		<Container fluid className="justify-content-md-center ">
+		<Container fluid className="justify-content-md-center gallery">
 			<Row className="text-center align-items-md-center justify-content-md-center">
 				<Col md={8}>
 					<Card className="border-0 mb-4">

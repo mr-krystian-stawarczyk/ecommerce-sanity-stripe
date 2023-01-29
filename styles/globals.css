@@ -23,14 +23,37 @@ body,
 	z-index: 1;
 }
 
+#basic-navbar-nav {
+	text-align: center;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.videoBg {
 		width: 450px;
+		margin-left: 0.5rem;
+	}
+	.cart-icon {
+		margin-left: 1rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.videoBg {
+		width: 350px;
+		padding-top: 3rem;
+	}
+
+	.header-text {
+		display: none;
+	}
+
+	.gallery {
+		margin-top: 5rem;
 	}
 }
 
