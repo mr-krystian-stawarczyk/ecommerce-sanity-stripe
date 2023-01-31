@@ -11,7 +11,7 @@ function Interrested() {
 			}}
 		>
 			<Row className=" rounded  mt-5 pt-5">
-				<Col md={6} sm className="">
+				<Col md={4} sm className="mx-auto my-auto ">
 					<Card
 						style={{
 							alignItems: "center",
@@ -42,17 +42,8 @@ function Interrested() {
 						</Card.Body>
 					</Card>
 				</Col>
-				<Col md={4} className="videoBg">
-					<video
-						autoPlay
-						loop
-						muted
-						style={{
-							maxWidth: "700px",
-							maxHeight: "700px",
-						}}
-						className="rounded videoBg mx-5"
-					>
+				<Col md={4} className=" mt-5 pt-5 hide">
+					<video autoPlay loop muted className="rounded videoBg mt-5">
 						<source src="/assets/videoBg.mp4" />
 					</video>
 				</Col>
