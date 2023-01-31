@@ -26,7 +26,7 @@ const ProductDetails = ({ product, products }) => {
 	return (
 		<Container className="mt-5 " fluid>
 			<Row className="pt-5  pb-5 justify-content-around">
-				<Col md={4} className="">
+				<Col xl={4} lg={6} md={7} className="">
 					<Row>
 						<Card className="border-0  m-2 ">
 							<Card.Img
