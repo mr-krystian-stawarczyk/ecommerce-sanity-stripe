@@ -2,18 +2,12 @@ import React, { useState } from "react";
 
 import { Product } from "../../components";
 import { urlFor, client } from "../../lib/client";
-import {
-	AiOutlineMinus,
-	AiOutlinePlus,
-	AiFillStar,
-	AiOutlineStar,
-} from "react-icons/ai";
 
 import { useStateContext } from "../../context/StateContext";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 
 const ProductDetails = ({ product, products }) => {
-	const { image, name, details, price } = product;
+	const { image, name, details, price, material } = product;
 
 	const [index, setIndex] = useState(0);
 
@@ -59,6 +53,8 @@ const ProductDetails = ({ product, products }) => {
 							<Card.Title className="my-2">{name}</Card.Title>
 							<Card.Title className="my-2">Details:</Card.Title>
 							<Card.Text className="my-2">{details}</Card.Text>
+							<Card.Title className="my-2">Material:</Card.Title>
+							<Card.Text className="my-2">{material}</Card.Text>
 							<Card.Title className="my-2">€{price}</Card.Title>
 						</Card>
 
