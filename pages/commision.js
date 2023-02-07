@@ -6,7 +6,7 @@ function Commision() {
 		<Container fluid className="justify-content-md-center  rounded mt-5">
 			<Row className="text-center  rounded">
 				<Col className="my-5">
-					<Card className="border-0 bg-transparent ">
+					<Card className="border-0 bg-transparent my-5">
 						<Card.Title>
 							Studio Mo offers customized commission works. In dialogue with
 							clients we makes special orders on desired dimensions, series and
@@ -20,7 +20,10 @@ function Commision() {
 						</Card.Text>
 					</Card>
 					<Row style={{ justifyContent: "center" }}>
-						<Button className="bg-dark text-light shadow-lg" href="/contact">
+						<Button
+							className="bg-dark text-light shadow-lg mb-5"
+							href="/contact"
+						>
 							Enquire for more information
 						</Button>
 					</Row>
@@ -28,7 +31,7 @@ function Commision() {
 			</Row>
 
 			<Row className="justify-content-md-center">
-				<Col md={10} className="mx-2 my-2 ">
+				<Col md={10} className="mx-2 my-4 ">
 					<Card className=" rounded">
 						<Card.Img
 							variant="top"

@@ -19,7 +19,7 @@ const NavbarComp = () => {
 			style={{
 				height: "70px",
 			}}
-			className="  bg-white"
+			className="  bg-white "
 			collapseOnSelect
 		>
 			<Container>

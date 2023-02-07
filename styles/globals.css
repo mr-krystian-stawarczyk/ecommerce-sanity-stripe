@@ -32,6 +32,10 @@ a {
 	text-decoration: none;
 }
 
+.card-short {
+	background-color: #63636321;
+}
+
 .videoBg {
 	max-width: 300px;
 	overflow: hidden;

@@ -7,7 +7,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
 	return (
 		<Col xl={4} lg={6} md={5} sm={10} className="produkt my-5">
 			<Link href={`/product/${slug.current}`}>
-				<Card className="border-0 m-4 shadow-lg ">
+				<Card className="border-0 m-4 shadow-lg card-short ">
 					<Card.Img
 						src={urlFor(image && image[0])}
 						style={{ maxHeight: "35rem" }}
