@@ -1,5 +1,5 @@
 import React from "react";
-
+import Head from "next/head";
 import { client } from "../lib/client";
 import { Product, Commision } from "../components";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,6 +8,9 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 const Shop = ({ products, bannerData }) => {
 	return (
 		<Container fluid>
+			<Head>
+				<title>Shop</title>
+			</Head>
 			<Row className="mt-5 text-center">
 				<Col className="mt-5 text-dark">
 					<Card className="border-0">

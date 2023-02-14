@@ -110,6 +110,16 @@ function Terms() {
 							copied or used without the prior written consent of owner
 							Magdalena Lapinska.
 						</Card.Text>
+						<Card.Title>COOKIES POLICY</Card.Title>
+						<Card.Text>
+							By using our website, you agree to our use of cookies. We use
+							cookies to personalize content, provide social media features, and
+							analyze our traffic. We also share information about your use of
+							our site with our social media, advertising, and analytics
+							partners. You can manage your cookie preferences through your
+							browser settings. Please note that disabling cookies may affect
+							the functionality of our website.
+						</Card.Text>
 					</Card>
 				</Col>
 			</Row>

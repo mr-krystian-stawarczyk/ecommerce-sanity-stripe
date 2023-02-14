@@ -14,12 +14,15 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 
 import { AiOutlineMail } from "react-icons/ai";
-
+import Head from "next/head";
 import { urlFor } from "../lib/client";
 
 const Contact = () => {
 	return (
 		<Container fluid className=" rounded galleryBg">
+			<Head>
+				<title>Contact</title>
+			</Head>
 			<Row className=" rounded my-5 py-5">
 				<Col md={6} className="mt-5 pt-5">
 					<Card

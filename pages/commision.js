@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-
+import Head from "next/head";
 function Commision() {
 	return (
 		<Container fluid className="justify-content-md-center  rounded mt-5">
+			<Head>
+				<title>Commision</title>
+			</Head>
 			<Row className="text-center  rounded">
 				<Col className="my-5">
 					<Card className="border-0 bg-transparent my-5">

@@ -1,10 +1,13 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
-
+import Head from "next/head";
 function faq() {
 	return (
 		<Container className="mt-5 p-5 galleryBg" fluid>
+			<Head>
+				<title>Faq</title>
+			</Head>
 			<Container>
 				<Row className="justify-content-center text-center">
 					<Col md={8}>
