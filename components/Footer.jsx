@@ -6,6 +6,7 @@ import {
 	AiOutlineFacebook,
 } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
+
 function Footer() {
 	return (
 		<div className="footer-container">

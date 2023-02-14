@@ -6,9 +6,10 @@ import { useStateContext } from "../context/StateContext";
 
 import { AiOutlineShopping } from "react-icons/ai";
 
-import { Container, Button, Form } from "react-bootstrap";
+import { Container, Button, Row } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import CookieConsent from "./CookiesConsent";
 
 const NavbarComp = () => {
 	const { showCart, setShowCart, totalQuantities } = useStateContext();
